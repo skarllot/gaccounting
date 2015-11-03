@@ -1,0 +1,600 @@
+[
+	{
+		"_id": 1,
+		"name": "Ativo"
+	},
+	{
+		"_id": 10,
+		"name": "Ativo Circulante"
+	},
+	{
+		"_id": 100,
+		"name": "Disponibilidades",
+		"minors": [
+			{ "_id": 1, "name": "Caixa", "refs": [] },
+			{ "_id": 2, "name": "Bancos Conta Movimento", "refs": [] },
+			{ "_id": 3, "name": "Numerários em Trânsito", "refs": [] },
+			{ "_id": 4, "name": "Aplicações de Liquidez Imediata", "refs": [] }
+		]
+	},
+	{
+		"_id": 101,
+		"name": "Contas a Receber",
+		"minors": [
+			{ "_id": 1, "name": "Duplicatas a Receber", "refs": [] },
+			{ "_id": 2, "name": "Duplicatas Descontadas", "inverted": true, "refs": [] },
+			{ "_id": 3, "name": "Provisão para Créditos de Liquidação Duvidosa", "inverted": true, "refs": [] },
+			{ "_id": 4, "name": "Adiantamento a Empregados", "refs": [] },
+			{ "_id": 5, "name": "Cheques em Cobrança", "refs": [] },
+			{ "_id": 6, "name": "Dividendos a Receber", "refs": [] }
+		]
+	},
+	{
+		"_id": 102,
+		"name": "Impostos a Recuperar",
+		"minors": [
+			{ "_id": 1, "name": "ICMS a Recuperar", "refs": [] },
+			{ "_id": 2, "name": "Outros Impostos a Recuperar", "refs": [] }
+		]
+	},
+	{
+		"_id": 103,
+		"name": "Investimentos Temporários a Curto Prazo",
+		"minors": [
+			{ "_id": 1, "name": "Ações de Outras Empresas", "refs": [] },
+			{ "_id": 2, "name": "Aplicações Financeiras", "refs": [] }
+		]
+	},
+	{
+		"_id": 104,
+		"name": "Estoques",
+		"minors": [
+			{ "_id": 1, "name": "Mercadorias", "refs": [] },
+			{ "_id": 2, "name": "Material de Embalagem", "refs": [] },
+			{ "_id": 3, "name": "Material de Expediente", "refs": [] },
+			{ "_id": 4, "name": "Provisão para Perdas e Estoques", "inverted": true, "refs": [] }
+		]
+	},
+	{
+		"_id": 105,
+		"name": "Despesas do Exercício Seguinte",
+		"minors": [
+			{ "_id": 1, "name": "Aluguéis Passivos a Apropriar (ou a Vencer)", "refs": [] },
+			{ "_id": 2, "name": "Despesas Financeiras a Apropriar (ou a Vencer)", "refs": [] },
+			{ "_id": 3, "name": "Prêmios de Seguro a Apropriar (ou a Vencer)", "refs": [] }
+		]
+	},
+	{
+		"_id": 11,
+		"name": "Ativo Realizável a Longo Prazo"
+	},
+	{
+		"_id": 110,
+		"name": "Contas a Receber",
+		"minors": [
+			{ "_id": 1, "name": "Duplicatas a Receber", "refs": [] },
+			{ "_id": 2, "name": "Provisão para Créditos de Liquidação Duvidosa", "inverted": true, "refs": [] },
+			{ "_id": 3, "name": "Promissórias a Receber", "refs": [] }
+		]
+	},
+	{
+		"_id": 119,
+		"name": "Outros Créditos",
+		"minors": [
+			{ "_id": 1, "name": "Adiantamentos a Diretores e Acionistas", "refs": [] },
+			{ "_id": 2, "name": "Empréstimos a Sociedade Coligadas", "refs": [] }
+		]
+	},
+	{
+		"_id": 12,
+		"name": "Ativo Permanente"
+	},
+	{
+		"_id": 120,
+		"name": "Investimentos",
+		"minors": [
+			{ "_id": 1, "name": "Participações em Coligadas", "refs": [] },
+			{ "_id": 2, "name": "Participações em Controladas", "refs": [] },
+			{ "_id": 3, "name": "Investimentos Permanentes em Outras Empresas", "refs": [] },
+			{ "_id": 4, "name": "Provisão para Perdas na Realização de Investimentos", "inverted": true, "refs": [] },
+			{ "_id": 5, "name": "Obras de Arte", "refs": [] },
+			{ "_id": 6, "name": "Imóveis de Renda", "refs": [] },
+			{ "_id": 7, "name": "Depreciação Acumulada", "inverted": true, "refs": [] }
+		]
+	},
+	{
+		"_id": 121,
+		"name": "Ativo Imobilizado (Tangíveis)",
+		"minors": [
+			{ "_id": 1, "name": "Computadores e Periféricos", "refs": [] },
+			{ "_id": 2, "name": "Terrenos", "refs": [] },
+			{ "_id": 3, "name": "Edificações", "refs": [] },
+			{ "_id": 4, "name": "Máquinas e Equipamentos", "refs": [] },
+			{ "_id": 5, "name": "Veículos", "refs": [] },
+			{ "_id": 6, "name": "Móveis e Utensílios", "refs": [] },
+			{ "_id": 7, "name": "Depreciação Acumulada", "inverted": true, "refs": [] }
+		]
+	},
+	{
+		"_id": 122,
+		"name": "Ativo Imobilizado (Intangíveis)",
+		"minors": [
+			{ "_id": 1, "name": "Softwares", "refs": [] },
+			{ "_id": 2, "name": "Marcas", "refs": [] },
+			{ "_id": 3, "name": "Patentes", "refs": [] },
+			{ "_id": 4, "name": "Direitos Autorais", "refs": [] },
+			{ "_id": 5, "name": "Licenças", "refs": [] },
+			{ "_id": 6, "name": "Propriedade Intelectual", "refs": [] },
+			{ "_id": 7, "name": "Nome Comercial", "refs": [] },
+			{ "_id": 8, "name": "Imagem", "refs": [] },
+			{ "_id": 9, "name": "Carteira de Clientes", "refs": [] },
+			{ "_id": 10, "name": "Franquia", "refs": [] },
+			{ "_id": 11, "name": "Direitos de Comercialização", "refs": [] },
+			{ "_id": 12, "name": "Direitos de Uso de Software", "refs": [] },
+			{ "_id": 13, "name": "Amortização Acumulada", "inverted": true, "refs": [] }
+		]
+	},
+	{
+		"_id": 123,
+		"name": "Ativo Diferido",
+		"minors": [
+			{ "_id": 1, "name": "Gastos de Organização", "refs": [] },
+			{ "_id": 2, "name": "Gastos de Reorganização", "refs": [] },
+			{ "_id": 3, "name": "Amortização Acumulada", "inverted": true, "refs": [] }
+		]
+	},
+	{
+		"_id": 124,
+		"name": "Depósitos em Garantia e Cauções em Dinheiro",
+		"minors": [
+			{ "_id": 1, "name": "Garantias de Operações em Bolsas de Valores", "refs": [] },
+			{ "_id": 2, "name": "Garantias de Aluguéis em Dinheiro", "refs": [] },
+			{ "_id": 3, "name": "Garantias em Licitações em Dinheiro", "refs": [] }
+		]
+	},
+	{
+		"_id": 2,
+		"name": "Passivo e Patrimônio Líquido"
+	},
+	{
+		"_id": 20,
+		"name": "Passivo Circulante"
+	},
+	{
+		"_id": 200,
+		"name": "Obrigações a Fornecedores",
+		"minors": [
+			{ "_id": 1, "name": "Duplicatas a Pagar", "refs": [] }
+		]
+	},
+	{
+		"_id": 201,
+		"name": "Obrigações Financeiras",
+		"minors": [
+			{ "_id": 1, "name": "Debêntures", "refs": [] },
+			{ "_id": 2, "name": "Financiamentos a Pagar", "refs": [] },
+			{ "_id": 3, "name": "Promissórias a Pagar", "refs": [] }
+		]
+	},
+	{
+		"_id": 202,
+		"name": "Obrigações Fiscais",
+		"minors": [
+			{ "_id": 1, "name": "SIMPLES Nacional", "refs": [] },
+			{ "_id": 2, "name": "Cofins a Recolher", "refs": [] },
+			{ "_id": 3, "name": "ICMS a Recolher", "refs": [] },
+			{ "_id": 4, "name": "ISS a Recolher", "refs": [] },
+			{ "_id": 5, "name": "PIS sobre Faturamento a Recolher", "refs": [] },
+			{ "_id": 6, "name": "Provisão para Imposto de Renda", "refs": [] },
+			{ "_id": 7, "name": "Provisão para Contribuição Social", "refs": [] },
+			{ "_id": 8, "name": "IRRF a Recolher", "refs": [] },
+			{ "_id": 9, "name": "Provisão para o IOF", "refs": [] }
+		]
+	},
+	{
+		"_id": 203,
+		"name": "Obrigações Trabalhistas",
+		"minors": [
+			{ "_id": 1, "name": "Contribuições de Previdência a Recolher", "refs": [] },
+			{ "_id": 2, "name": "Décimo Terceiro Salário a Pagar", "refs": [] },
+			{ "_id": 3, "name": "Férias a Pagar", "refs": [] },
+			{ "_id": 4, "name": "FGTS a Recolher", "refs": [] },
+			{ "_id": 5, "name": "Salários a Pagar", "refs": [] }
+		]
+	},
+	{
+		"_id": 204,
+		"name": "Provisões",
+		"minors": [
+			{ "_id": 1, "name": "Provisão para Contribuição Social", "refs": [] },
+			{ "_id": 2, "name": "Provisão para Décimo Terceiro Salário", "refs": [] },
+			{ "_id": 3, "name": "Provisão para Encargos Sociais", "refs": [] },
+			{ "_id": 4, "name": "Provisão para Férias", "refs": [] },
+			{ "_id": 5, "name": "Provisão para Imposto de Renda", "refs": [] }
+		]
+	},
+	{
+		"_id": 21,
+		"name": "Passivo Exigível a Longo Prazo"
+	},
+	{
+		"_id": 210,
+		"name": "Obrigações a Fornecedores",
+		"minors": [
+			{ "_id": 1, "name": "Duplicatas a Pagar", "refs": [] }
+		]
+	},
+	{
+		"_id": 211,
+		"name": "Obrigações Financeiras",
+		"minors": [
+			{ "_id": 1, "name": "Debêntures", "refs": [] },
+			{ "_id": 2, "name": "Financiamentos a Pagar", "refs": [] },
+			{ "_id": 3, "name": "Promissórias a Pagar", "refs": [] }
+		]
+	},
+	{
+		"_id": 22,
+		"name": "Resultados de Exercícios Futuros"
+	},
+	{
+		"_id": 220,
+		"name": "Resultados de Exercícios Futuros",
+		"minors": [
+			{ "_id": 1, "name": "Aluguéis Passivos a Apropriar (ou a Vencer)", "refs": [] },
+			{ "_id": 2, "name": "Receitas Financeiras a Apropriar (ou a Vencer)", "refs": [] },
+			{ "_id": 3, "name": "Custos Operacionais a Apropriar (ou a Vencer)", "inverted": true, "refs": [] }
+		]
+	},
+	{
+		"_id": 23,
+		"name": "Patrimônio Líquido"
+	},
+	{
+		"_id": 230,
+		"name": "Capital Social",
+		"minors": [
+			{ "_id": 1, "name": "Capital Subscrito", "refs": [] },
+			{ "_id": 2, "name": "Capital a Realizar", "inverted": true, "refs": [] }
+		]
+	},
+	{
+		"_id": 231,
+		"name": "Reservas de Capital",
+		"minors": [
+			{ "_id": 1, "name": "Reservas de Ágio de Ações", "refs": [] },
+			{ "_id": 2, "name": "Reservas de Alienação de Debêntures", "refs": [] },
+			{ "_id": 3, "name": "Reservas de Alienação de Partes Beneficiárias", "refs": [] },
+			{ "_id": 4, "name": "Reservas de Doações e Subvenções para Investimentos", "refs": [] }
+		]
+	},
+	{
+		"_id": 233,
+		"name": "Reservas de Lucro",
+		"minors": [
+			{ "_id": 1, "name": "Reserva Legal", "refs": [] },
+			{ "_id": 2, "name": "Reservas Estatutárias", "refs": [] },
+			{ "_id": 3, "name": "Reservas para Contigências", "refs": [] },
+			{ "_id": 4, "name": "Reservas para Investimentos", "refs": [] },
+			{ "_id": 5, "name": "Reservas de Lucros a Realizar", "refs": [] }
+		]
+	},
+	{
+		"_id": 234,
+		"name": "Lucros ou Prejuízos Acumulados",
+		"minors": [
+			{ "_id": 1, "name": "Lucros Acumulados", "refs": [] },
+			{ "_id": 2, "name": "Prejuízos Acumulados", "inverted": true, "refs": [] }
+		]
+	},
+	{
+		"_id": 3,
+		"name": "Despesas e Custos (Contas de Resultado)"
+	},
+	{
+		"_id": 30,
+		"name": "Despesas Operacionais"
+	},
+	{
+		"_id": 300,
+		"name": "Despesas com Vendas",
+		"minors": [
+			{ "_id": 1, "name": "Assistência Médica e Social", "refs": [] },
+			{ "_id": 2, "name": "Comissões sobre Vendas", "refs": [] },
+			{ "_id": 3, "name": "Condução e Transporte", "refs": [] },
+			{ "_id": 4, "name": "Contribuições para o FGTS", "refs": [] },
+			{ "_id": 5, "name": "Contribuições de Previdência", "refs": [] },
+			{ "_id": 6, "name": "Décimo Terceiro Salário", "refs": [] },
+			{ "_id": 7, "name": "Encargos Sociais", "refs": [] },
+			{ "_id": 8, "name": "Férias", "refs": [] },
+			{ "_id": 9, "name": "Gratificações", "refs": [] },
+			{ "_id": 10, "name": "Indenizações", "refs": [] },
+			{ "_id": 11, "name": "Lanches e Refeições", "refs": [] },
+			{ "_id": 12, "name": "Salários", "refs": [] },
+			{ "_id": 13, "name": "Seguros de Acidente de Trabalho", "refs": [] },
+			{ "_id": 14, "name": "Viagens e Estadias", "refs": [] },
+			{ "_id": 15, "name": "Brindes e Presentes", "refs": [] },
+			{ "_id": 16, "name": "Combustíveis", "refs": [] },
+			{ "_id": 17, "name": "Despesas com Créditos de Liquidação Duvidosa", "refs": [] },
+			{ "_id": 18, "name": "Fretes e Carretos", "refs": [] },
+			{ "_id": 19, "name": "Materiais de Embalagem", "refs": [] },
+			{ "_id": 20, "name": "Perdas com Clientes", "refs": [] },
+			{ "_id": 21, "name": "Propaganda e Publicidade", "refs": [] },
+			{ "_id": 22, "name": "Serviços de Terceiros", "refs": [] },
+			{ "_id": 23, "name": "Despesas Eventuais", "refs": [] }
+		]
+	},
+	{
+		"_id": 301,
+		"name": "Despesas Financeiras",
+		"minors": [
+			{ "_id": 1, "name": "Descontos Concedidos", "refs": [] },
+			{ "_id": 2, "name": "Despesas Bancárias", "refs": [] },
+			{ "_id": 3, "name": "IOF", "refs": [] },
+			{ "_id": 4, "name": "Juros Passivos", "refs": [] }
+		]
+	},
+	{
+		"_id": 302,
+		"name": "Despesas Administrativas",
+		"minors": [
+			{ "_id": 1, "name": "Assistência Médica e Social", "refs": [] },
+			{ "_id": 2, "name": "Condução e Transporte", "refs": [] },
+			{ "_id": 3, "name": "Contribuições para o FGTS", "refs": [] },
+			{ "_id": 4, "name": "Contribuições de Previdência", "refs": [] },
+			{ "_id": 5, "name": "Décimo Terceiro Salário", "refs": [] },
+			{ "_id": 6, "name": "Encargos Sociais", "refs": [] },
+			{ "_id": 7, "name": "Férias", "refs": [] },
+			{ "_id": 8, "name": "Honorários da Diretoria", "refs": [] },
+			{ "_id": 9, "name": "Indenizações", "refs": [] },
+			{ "_id": 10, "name": "Lanches e Refeições", "refs": [] },
+			{ "_id": 11, "name": "Pró-Labore", "refs": [] },
+			{ "_id": 12, "name": "Salários", "refs": [] },
+			{ "_id": 13, "name": "Seguros de Acidente de Trabalho", "refs": [] },
+			{ "_id": 14, "name": "Viagens e Estadias", "refs": [] },
+			{ "_id": 15, "name": "Água e Esgoto", "refs": [] },
+			{ "_id": 16, "name": "Aluguéis Passivos", "refs": [] },
+			{ "_id": 17, "name": "Amortização", "refs": [] },
+			{ "_id": 18, "name": "Combustíveis", "refs": [] },
+			{ "_id": 19, "name": "Correios e Telégrafos", "refs": [] },
+			{ "_id": 20, "name": "Depreciação", "refs": [] },
+			{ "_id": 21, "name": "Energia Elétrica", "refs": [] },
+			{ "_id": 22, "name": "Fretes e Carretos", "refs": [] },
+			{ "_id": 23, "name": "Jornais e Revistas", "refs": [] },
+			{ "_id": 24, "name": "Material de Expediente", "refs": [] },
+			{ "_id": 25, "name": "Material de Limpeza", "refs": [] },
+			{ "_id": 26, "name": "Prêmios de Seguro", "refs": [] },
+			{ "_id": 27, "name": "Telefone", "refs": [] },
+			{ "_id": 28, "name": "Cartório de Notas", "refs": [] }
+		]
+	},
+	{
+		"_id": 303,
+		"name": "Despesas com Infraestrutura de TI",
+		"minors": [
+			{ "_id": 1, "name": "Registro de Domínios", "refs": [] },
+			{ "_id": 2, "name": "Certificados SSL", "refs": [] },
+			{ "_id": 3, "name": "Servidores Virtualizados", "refs": [] },
+			{ "_id": 4, "name": "Servidores Físicos", "refs": [] },
+			{ "_id": 5, "name": "E-mails", "refs": [] },
+			{ "_id": 6, "name": "Armazenamento", "refs": [] },
+			{ "_id": 7, "name": "Bancos de Dados", "refs": [] },
+			{ "_id": 99, "name": "Pacote", "refs": [
+				{
+					"_id": 1,
+					"name": "Google for Work",
+					"notes": "Inclui e-mail, armazenamento, agenda, docs etc"
+				}
+			] }
+		]
+	},
+	{
+		"_id": 304,
+		"name": "Despesas com Serviços de Terceiros",
+		"minors": [
+			{ "_id": 1, "name": "Criação de Identidade Visual", "refs": [] },
+			{ "_id": 2, "name": "Desenvolvimento de Sites", "refs": [] },
+			{ "_id": 3, "name": "Despachos Documentais", "refs": [] }
+		]
+	},
+	{
+		"_id": 309,
+		"name": "Outras Despesas Operacionais",
+		"minors": [
+			{ "_id": 1, "name": "Multas Fiscais", "refs": [] },
+			{ "_id": 2, "name": "Perdas na Realização de Investimentos", "refs": [] },
+			{ "_id": 3, "name": "Variações Monetárias Passivas", "refs": [] }
+		]
+	},
+	{
+		"_id": 31,
+		"name": "Custos Operacionais"
+	},
+	{
+		"_id": 310,
+		"name": "Custos das Compras",
+		"minors": [
+			{ "_id": 1, "name": "Compras de Mercadorias", "refs": [] },
+			{ "_id": 2, "name": "Fretes e Seguros sobre Compras", "refs": [] },
+			{ "_id": 3, "name": "Compras Anuladas", "inverted": true, "refs": [] },
+			{ "_id": 4, "name": "Descontos Incondicionais Obtidos", "inverted": true, "refs": [] }
+		]
+	},
+	{
+		"_id": 32,
+		"name": "Despesas Não-Operacionais"
+	},
+	{
+		"_id": 320,
+		"name": "Despesas Não-Operacionais",
+		"minors": [
+			{ "_id": 1, "name": "Perdas em Transações do Ativo Permanente", "refs": [] }
+		]
+	},
+	{
+		"_id": 4,
+		"name": "Receitas (Contas de Resultado)"
+	},
+	{
+		"_id": 40,
+		"name": "Receitas Operacionais"
+	},
+	{
+		"_id": 400,
+		"name": "Receita Bruta",
+		"minors": [
+			{ "_id": 1, "name": "Vendas de Mercadorias", "refs": [] },
+			{ "_id": 2, "name": "Receitas de Serviços", "refs": [] },
+			{ "_id": 3, "name": "Vendas Anuladas", "refs": [] },
+			{ "_id": 4, "name": "Descontos Incondicionais Concedidos", "inverted": true, "refs": [] },
+			{ "_id": 5, "name": "ICMS sobre Vendas", "inverted": true, "refs": [] },
+			{ "_id": 6, "name": "Imposto sobre Serviço - ISS", "inverted": true, "refs": [] },
+			{ "_id": 7, "name": "PIS sobre Faturamento", "inverted": true, "refs": [] },
+			{ "_id": 8, "name": "Cofins", "refs": [] }
+		]
+	},
+	{
+		"_id": 401,
+		"name": "Receitas Financeiras",
+		"minors": [
+			{ "_id": 1, "name": "Descontos Obtidos", "refs": [] },
+			{ "_id": 2, "name": "Juros Ativos", "refs": [] },
+			{ "_id": 3, "name": "Rendimentos sobre Aplicações Financeiras", "refs": [] }
+		]
+	},
+	{
+		"_id": 409,
+		"name": "Outras Receitas Operacionais",
+		"minors": [
+			{ "_id": 1, "name": "Aluguéis Ativos", "refs": [] },
+			{ "_id": 2, "name": "Perdas Recuperadas", "refs": [] },
+			{ "_id": 3, "name": "Variações Monetárias Ativas", "refs": [] },
+			{ "_id": 4, "name": "Receitas de Participações Societárias", "refs": [] },
+			{ "_id": 5, "name": "Receitas Eventuais", "refs": [] }
+		]
+	},
+	{
+		"_id": 41,
+		"name": "Receitas Não-Operacionais"
+	},
+	{
+		"_id": 410,
+		"name": "Receitas Não-Operacionais",
+		"minors": [
+			{ "_id": 1, "name": "Ganhos em Transações do Ativo Permanente", "refs": [] }
+		]
+	},
+	{
+		"_id": 5,
+		"name": "Apuração de Resultados"
+	},
+	{
+		"_id": 50,
+		"name": "Resultado Operacional"
+	},
+	{
+		"_id": 500,
+		"name": "Receita Operacional Bruta",
+		"minors": [
+			{ "_id": 1, "name": "Vendas de Produtos", "refs": [] },
+			{ "_id": 2, "name": "Vendas de Mercadorias", "refs": [] },
+			{ "_id": 3, "name": "Prestação de Serviços", "refs": [] }
+		]
+	},
+	{
+		"_id": 501,
+		"name": "Deduções da Receita Bruta",
+		"inverted": true,
+		"minors": [
+			{ "_id": 1, "name": "Devoluções de Vendas", "refs": [] },
+			{ "_id": 2, "name": "Abatimentos", "refs": [] },
+			{ "_id": 3, "name": "Impostos e Contribuições Incidentes sobre Vendas", "refs": [] }
+		]
+	},
+	{
+		"_id": 502,
+		"name": "Receita Operacional Líquida",
+		"minors": [
+			{ "_id": 1, "name": "Receita Operacional Líquida", "refs": [] }
+		]
+	},
+	{
+		"_id": 503,
+		"name": "Custos das Vendas",
+		"inverted": true,
+		"minors": [
+			{ "_id": 1, "name": "Custo dos Produtos Vendidos", "refs": [] },
+			{ "_id": 2, "name": "Custo das Mercadorias", "refs": [] },
+			{ "_id": 3, "name": "Custo dos Serviços Prestados", "refs": [] }
+		]
+	},
+	{
+		"_id": 504,
+		"name": "Resultado Operacional Bruto",
+		"minors": [
+			{ "_id": 1, "name": "Lucro Bruto", "refs": [] }
+		]
+	},
+	{
+		"_id": 51,
+		"name": "Resultado Operacional Líquido"
+	},
+	{
+		"_id": 510,
+		"name": "Despesas Operacionais",
+		"inverted": true,
+		"minors": [
+			{ "_id": 1, "name": "Despesas com Vendas", "refs": [] },
+			{ "_id": 2, "name": "Despesas Administrativas", "refs": [] }
+		]
+	},
+	{
+		"_id": 511,
+		"name": "Despesas Financeiras Líquidas",
+		"inverted": true,
+		"minors": [
+			{ "_id": 1, "name": "Despesas Financeiras", "refs": [] },
+			{ "_id": 2, "name": "Receitas Financeiras", "inverted": true, "refs": [] },
+			{ "_id": 3, "name": "Variações Monetárias e Cambiais Passivas", "refs": [] },
+			{ "_id": 4, "name": "Variações Monetárias e Cambiais Ativas", "inverted": true, "refs": [] }
+		]
+	},
+	{
+		"_id": 512,
+		"name": "Outras Receitas e Despesas",
+		"minors": [
+			{ "_id": 1, "name": "Resultado da Equivalência Patrimonial", "refs": [] }
+		]
+	},
+	{
+		"_id": 513,
+		"name": "Resultado Operacional",
+		"minors": [
+			{ "_id": 1, "name": "Resultado Operacional", "refs": [] }
+		]
+	},
+	{
+		"_id": 52,
+		"name": "Resultado Não-Operacional"
+	},
+	{
+		"_id": 520,
+		"name": "Receitas e Despesas",
+		"minors": [
+			{ "_id": 1, "name": "Venda de Bens e Direitos do Ativo Não Circulante", "refs": [] },
+			{ "_id": 2, "name": "Custo da Venda de Bens e Direitos do Ativo Não Circulante", "inverted": true, "refs": [] },
+			{ "_id": 3, "name": "Indenização de Seguros", "refs": [] }
+		]
+	},
+	{
+		"_id": 53,
+		"name": "Resultado Líquido"
+	},
+	{
+		"_id": 530,
+		"name": "Resultado do Exercício",
+		"minors": [
+			{ "_id": 1, "name": "Resultado do Exercício", "refs": [] }
+		]
+	}
+]
