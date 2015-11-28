@@ -32,7 +32,7 @@ type (
 	AccountMinor struct {
 		AccountAtom `bson:",inline"`
 		Inverted    bool          `bson:"inverted,omitempty" json:"inverted,omitempty"`
-		Refs        []AccountAtom `bson:"refs,omitempty" json:"refs,omitempty"`
+		Subs        []AccountAtom `bson:"subs,omitempty" json:"subs,omitempty"`
 	}
 
 	AccountAtom struct {
